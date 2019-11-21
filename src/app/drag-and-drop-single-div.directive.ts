@@ -4,9 +4,9 @@ import { CdkDropList, DragDrop, DropListRef, DragRef, moveItemInArray} from '@an
 
 
 @Directive({
-  selector: '[edit-layout-order]',
+  selector: '[drag-and-drop-single-div]',
 })
-export class EditLayoutOrderDirective implements AfterViewInit {
+export class DragAndDropSingleDivDirective implements AfterViewInit {
     @Input('list-to-order') list: any[];
     @Input('list-to-order-disabed') 
     set disabled(value: boolean) {

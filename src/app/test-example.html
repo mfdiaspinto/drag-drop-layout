@@ -1,5 +1,5 @@
   <div class="edit-layout-div-icon" (click)="isEditable()"><span    class="edit-layout-icon">+</span></div>
-<div  class="example-list"  edit-layout-order [list-to-order]=movies [list-to-order-disabed]="disabled">
+<div  class="example-list"  drag-and-drop-single-div [list-to-order]=movies [list-to-order-disabed]="disabled">
   <div class="example-box" *ngFor="let movie of movies" >{{movie}}</div>
 </div>
  

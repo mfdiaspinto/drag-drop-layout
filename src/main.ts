@@ -7,10 +7,9 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DemoMaterialModule} from './app/material-module';
 
-import {CdkDragDropSortingExample, TestExample} from './app/cdk-drag-drop-sorting-example';
-import { EditLayoutOrderDirective  } from './app/edit-layout-order.directive';
+import { TestSortingExample } from './app/test-example';
+import { DragAndDropSingleDivDirective  } from './app/drag-and-drop-single-div.directive';
 
 @NgModule({
   imports: [
@@ -18,13 +17,12 @@ import { EditLayoutOrderDirective  } from './app/edit-layout-order.directive';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [CdkDragDropSortingExample],
-  declarations: [CdkDragDropSortingExample, EditLayoutOrderDirective, TestExample],
-  bootstrap: [CdkDragDropSortingExample],
+  entryComponents: [TestSortingExample],
+  declarations: [TestSortingExample, DragAndDropSingleDivDirective],
+  bootstrap: [TestSortingExample],
   providers: []
 })
 export class AppModule {}
