@@ -1,0 +1,9 @@
+  <div class="edit-layout-div-icon" (click)="isEditable()"><span    class="edit-layout-icon">+</span></div>
+<div  class="example-list"  edit-layout-order [list-to-order]=movies [list-to-order-disabed]="disabled">
+  <div class="example-box" *ngFor="let movie of movies" >{{movie}}</div>
+</div>
+ 
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
